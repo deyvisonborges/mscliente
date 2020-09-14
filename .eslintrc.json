@@ -6,8 +6,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -17,8 +16,6 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "prettier/prettier": "error",
-    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-    "import/prefer-default-export": "off",
-    "jsx-quotes": ["error", "prefer-single"]
+    "import/prefer-default-export": "off"
   }
 }

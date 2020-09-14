@@ -1,6 +1,6 @@
 import * as express from 'express';
 import 'reflect-metadata';
-import loggerMiddleware from '../middlewares/logger';
+import loggerMiddleware from '../middlewares/Logger';
 
 const app = express();
 
