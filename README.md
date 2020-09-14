@@ -3,6 +3,7 @@
 **branchs**
 
 - `master`
+- `develop`
 - `feature/service-clientes`
 
 ## dev dependencies
