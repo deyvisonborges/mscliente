@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es6",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "strict": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
