@@ -1,3 +1,10 @@
+## develpment cycle
+
+**branchs**
+
+- `master`
+- `feature/service-clientes`
+
 ## dev dependencies
 
 - `eslint`
