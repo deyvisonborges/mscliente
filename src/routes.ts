@@ -3,16 +3,15 @@ import DadosPessoaisController from './controllers/DadosPessoaisController';
 
 const Route = express.Router();
 
-Route.get('/clientes/dados-pessoais', DadosPessoaisController.save);
-Route.get('/cliente/dados-pessoais/:id', DadosPessoaisController.save);
-Route.post('/cliente/dados-pessoais/:id', DadosPessoaisController.save);
-Route.put('/cliente/dados-pessoais/:id', DadosPessoaisController.save);
-Route.delete('/cliente/dados-pessoais/:id', DadosPessoaisController.save);
+Route.get('/cliente/:id/dados-pessoais', DadosPessoaisController.save);
+Route.post('/cliente/:id/dados-pessoais', DadosPessoaisController.save);
+Route.put('/cliente/:id/dados-pessoais', DadosPessoaisController.save);
+Route.delete('/cliente/:id/dados-pessoais', DadosPessoaisController.save);
 
 Route.get('/clientes/dados-contato', DadosPessoaisController.save);
-Route.get('/cliente/dados-contato/:id', DadosPessoaisController.save);
-Route.post('/cliente/dados-contato/:id', DadosPessoaisController.save);
-Route.put('/cliente/dados-contato/:id', DadosPessoaisController.save);
-Route.delete('/cliente/dados-contato/:id', DadosPessoaisController.save);
+Route.get('/cliente/:id/dados-contato', DadosPessoaisController.save);
+Route.post('/cliente/:id/dados-contato', DadosPessoaisController.save);
+Route.put('/cliente/:id/dados-contato', DadosPessoaisController.save);
+Route.delete('/cliente/:id/dados-contato', DadosPessoaisController.save);
 
 export default Route;
