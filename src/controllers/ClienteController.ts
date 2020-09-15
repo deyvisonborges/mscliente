@@ -1,4 +1,4 @@
-import { Request } from 'express';
+import { request, Request } from 'express';
 import { DadosPessoais } from '../entities/DadosPessoais';
 import { ControllerBase } from './ControllerBase';
 
@@ -13,6 +13,14 @@ class DadosPessoaisController extends ControllerBase<DadosPessoais> {
     super.IsRequired(_data.rg, 'O RG é obrigatório.');
     super.IsRequired(_data.cpf, 'O CPF precisa ser informado.');
     return super.save(_data);
+  }
+
+  async salvarDados(
+    dadosPessoais: Request,
+    dadosContato: Request,
+    dadosEndereco: Request
+  ) {
+    this.adicionarDadosPessoais(dadosPessoais);
   }
 }
 

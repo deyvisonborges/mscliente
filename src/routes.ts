@@ -1,5 +1,5 @@
 import * as express from 'express';
-import DadosPessoaisController from './controllers/DadosPessoaisController';
+import DadosPessoaisController from './controllers/ClienteController';
 
 const Route = express.Router();
 
