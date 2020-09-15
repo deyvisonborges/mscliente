@@ -9,8 +9,9 @@ app.use(loggerMiddleware);
 app.get('/teste', (request, response) => {
   response.send('Hello teste!');
 });
+
 app.get('/', (request: express.Request, response: express.Response) => {
   response.send('Hello world!');
 });
 
-app.listen(5000);
+export default app;
