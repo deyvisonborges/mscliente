@@ -1,7 +1,7 @@
 import { Entity, Column } from 'typeorm';
 import { EntityBase } from './EntityBase';
 
-@Entity({ name: 'contato' })
+@Entity({ name: 'dados_contato' })
 export class DadosContato extends EntityBase {
   @Column({ type: 'varchar', length: 15 })
   telefone_celular?: string;
@@ -10,5 +10,5 @@ export class DadosContato extends EntityBase {
   telefone_fixo?: string;
 
   @Column({ type: 'varchar', length: 40 })
-  email?: string;
+  email_alternativo?: string;
 }
