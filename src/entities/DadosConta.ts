@@ -8,4 +8,7 @@ export class DadosConta extends EntityBase {
 
   @Column({ type: 'varchar', length: 40 })
   email?: string;
+
+  @Column({ type: 'varchar', length: 40 })
+  senha?: string;
 }
