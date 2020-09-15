@@ -2,7 +2,7 @@ import { Entity, Column } from 'typeorm';
 import { EntityBase } from './EntityBase';
 
 @Entity({ name: 'contato' })
-export default class DadosResidencia extends EntityBase {
+export class DadosContato extends EntityBase {
   @Column({ type: 'varchar', length: 15 })
   telefone_celular?: string;
 
