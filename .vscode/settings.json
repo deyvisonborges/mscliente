@@ -2,6 +2,9 @@
   "[javascript]": {
     "editor.formatOnSave": true
   },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
   "editor.formatOnSave": true,
   "eslint.autoFixOnSave": true
 }
