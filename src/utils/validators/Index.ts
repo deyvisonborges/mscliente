@@ -27,19 +27,19 @@ export abstract class Notifications {
     }
   }
 
-  hasManLen(value, max, message: string) {
+  hasManLen(value: any, max: number, message: string) {
     if (!value || value.length > max) {
       this.addNotification(message);
     }
   }
 
-  hasFixedLen(value, len, message: string) {
+  hasFixedLen(value: any, len: number, message: string) {
     if (value.length != len) {
       this.addNotification(message);
     }
   }
 
-  isEmail(value, message: string) {}
+  isEmail(value:, message: string) {}
 
   get allNotifications(): Array<{ message: string }> {
     return this.notifications;
